@@ -2,8 +2,11 @@
 
 if [ $1 -gt 0 -a $2 -gt  0 ]
 then
-	echo "got it!! the param is $1 and $2"
+	for i in $(seq 1 $1)
+	do
+		echo $i
+	done
 else
-	echo "Input must be greater than 0 the param is $1 amd $2"
+	echo "Input must be greater than 0"
 fi
 exit 0
