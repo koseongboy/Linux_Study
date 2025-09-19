@@ -6,8 +6,9 @@ then
 	do
 		for j in $(seq 1 $2)
 		do
-			echo "i = $i j = $j"
+			printf  "$i*$j=%-3d" `expr $i \* $j`
 		done
+			echo ""
 	done
 else
 	echo "Input must be greater than 0"
